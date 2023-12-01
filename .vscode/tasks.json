@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar C",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${workspaceFolder}/Library_c/**/*.c",
+                "-o",
+                "/home/matheus/Projects/Wizards_Repository_C/output_bin/${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+    ],
+}
