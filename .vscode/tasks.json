@@ -6,7 +6,8 @@
             "type": "shell",
             "command": "gcc",
             "args": [
-                "${workspaceFolder}/Library_c/**/*.c",
+                //"${workspaceFolder}/Library_c/**/*.c",
+                "${file}",
                 "-o",
                 "/home/matheus/Projects/Wizards_Repository_C/output_bin/${fileBasenameNoExtension}"
             ],
