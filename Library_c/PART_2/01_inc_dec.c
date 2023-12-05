@@ -30,10 +30,10 @@ int main(){
     x = 5;
     y = ++x;
     // Para este caso, garantimos que y assumirá o valor de 5 + 1.
-    printf("y = ++x -> y = %d e x = %d)\n\n", y, x);
+    printf("y = ++x -> y = %d e x = %d\n\n", y, x);
     x = 5;
     y = x++;
     // Para este caso, garantimos que y assumirá 5, pois a atribuição do estado
     // x = 5 ocorreu antes de a variável x = 5 sofrer o incremento.
-    printf("y = x++ -> y = %d e x = %d)\n\n", y, x);
+    printf("y = x++ -> y = %d e x = %d\n\n", y, x);
 }

@@ -1,0 +1,4 @@
+/*
+Escreva um programa que leia um valor de temperatura na escala Celsius e imprima
+este valor na escala Fahrenheit.
+*/
