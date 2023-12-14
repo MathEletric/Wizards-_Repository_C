@@ -1,15 +1,14 @@
-// Tabela de placar ajustavel.
-// Implementar quantidade de linhas.
+// Tabela de placar ajustavel. (Implementar quantidade de linhas.)
 
 #include<stdio.h>
 
-void dimen_plate(int, char);
-void ast(int);
-void vaz(int);
+void dimen_plate(int, char),
+     ast(int),
+     vaz(int);
 
 int main(){
 
-    while (1){
+    while (1){ // Equivale a for(;;)
 
         short c;
         char n;
@@ -18,7 +17,6 @@ int main(){
         dimen_plate(c, n);
     }
 }
-
 
 void dimen_plate(int L, char num){
 
@@ -47,9 +45,6 @@ void dimen_plate(int L, char num){
     }
 }
 
-
-
-
 void ast(int n){
     for(unsigned short i=1; i<=n; i++)
         putchar('*'); 
@@ -67,23 +62,3 @@ void vaz(int n){
     }   
     putchar('\n');
 }
-
-
-
-
-  /*
-    for(unsigned short i=0; i<L; i++){
-        if(i==0) putchar('|');
-        if(i>0 && i<A){
-            if(!A%2){
-                for(unsigned short i=0; i<=(A-6); i++){
-
-                }
-
-
-            }
-            printf("Número %c", num);
-        }
-        if(i==A) putchar('|');
-    }
-    */
