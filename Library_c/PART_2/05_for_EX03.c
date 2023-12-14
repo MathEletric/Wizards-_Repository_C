@@ -1,44 +1,24 @@
+/*
+Você precisa imprimir o mapa de uma memória que tem 64 bytes de endereços.
+Os 6 primeiros endereços deverão ter os dados 00h, 01h, 02h, 03h, 04h, 05h e
+todos os restantes FFh. Desenvolva um projeto em C que gere este mapa na tela, 
+considerando que cada linha terá 16 bytes.
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 
-// O laço for nesse modo, lembra o funcionamento do while.
-
 int main(){
-    short num,
-          tentativas = 0,
-          chute=0;
-    do{ 
-        printf("Digite um valor diferente de zero: ");
-        scanf("%hd", &num);
-        if(num == 0){
-            printf("Você digitou zero. Tente novamente.\n");
-        }
-    }while(num == 0);
-  
-    
-   
+
     system("clear");
-    printf("Tente acertar o valor anteriormente digitado: ");
-
-    for(; num != chute;){
-        scanf("%hd", &chute);
-        
-        if((num != chute) && tentativas<10){
-            printf("Tente novamente. "); 
-        } 
-        else{
-            if(num == chute)
-                 printf("Acertou! Você precisou tentar %hd vez(es).\n", tentativas);
-        } 
-
-        if((tentativas>=5) && (num != chute)){ 
-            printf("Restam %d tentativas\n", 10 - tentativas);
+    for(unsigned short i=0; i<=4; i++){
+        for(unsigned short j = 0; j<=16; j++){
+            if(j<=6 && i==0)
+                printf("%2Xh ", j); // Ou printf("0%hdh ", j);
+            else{
+                printf("FFh ");
+            }
         }
-        
-        if(tentativas>=10){
-            printf("Excedeu número de tentativas.\n");
-            break;
-        }
-    tentativas++;
+        printf("\n");
     }
 }

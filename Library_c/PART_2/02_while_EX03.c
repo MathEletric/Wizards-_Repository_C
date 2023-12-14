@@ -1,10 +1,12 @@
-// Impressão da taboada do 1 até N.
+// Impressão das taboadas do 1 até N.
 
 #include<stdio.h>
 
 int main(){
+
     short N,
           c = 10;
+
     printf("Até qual taboada quer imprimir?\n");
     scanf("%hd", &N);
     while (N){
