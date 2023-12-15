@@ -17,5 +17,5 @@ int main(){
     // Caso seja declarada fora, poderemos, e seu valor será o de seu ultimo
     // incremento.
 
-    // Note que se i declarado e valorado, apos i passar por todos os incrementos
+    // Note que se i declarado e valorado, após i passar por todos os incrementos
     // dentro do laço for, ainda vai valer i = 10 após o laço.

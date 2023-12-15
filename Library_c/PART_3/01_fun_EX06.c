@@ -6,6 +6,8 @@ o valor linearmente proporcional para 8 bits, isto é, de 0 a 255.
 
 #include<stdio.h>
 
+// Importante lembrar que uma função do tipo não vazio, se converte no
+// valor de retorno.
 int conv_8bits(int);
 
 void main(){
