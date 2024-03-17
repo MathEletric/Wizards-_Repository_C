@@ -10,7 +10,7 @@ O sistema deve apresentar o limite de valor igual a 85. Caso o usuário digite
 um valor maior que 85, deverá gerar mensagem de erro.
 Exemplo:
 O usuário entra com 12;
-O sistema mostra os resultados 11, 13 e 36 e 1296.
+O sistema mostra os resultados 13, 11 e 36 e 1296.
 */
 
 #include<stdio.h>

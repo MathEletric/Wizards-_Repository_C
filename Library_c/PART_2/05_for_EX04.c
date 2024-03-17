@@ -7,6 +7,8 @@ a ser desenhada na tela. Exemplo, se o número for 3, a saída de tela será:
 */
 
 #include<stdio.h>
+//#include<unistd.h>
+
 int main(){
 
     short deg;
@@ -14,6 +16,7 @@ int main(){
 
     for(short i=0; i<deg; i++){
         for(short j=deg; j>=deg-i; j--){
+            //sleep(1);
             printf("#");
         }
     printf("\n");

@@ -12,15 +12,19 @@ int main(){
     int a1 = 0,
         a2 = 1,
         a3;
-        while(1){
-            printf("%d\n", a1);
-            a3 = a2 + a1;
-            a1 = a2;
-            a2 = a3;
+    char ok;
+ 
+    ok = 0;
+    while(!ok){
+        a3 = a2 + a1;
+        a1 = a2;
+        a2 = a3;
 
-            sleep(1);
-            if(a1 >= 1000){
-                break;
-            }  
+        if(a1 >= 1000){
+            ok = 1;
+            continue;
         }
+    sleep(1);
+    printf("%d\n", a1);
+    }
 }

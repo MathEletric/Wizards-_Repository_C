@@ -8,7 +8,7 @@
 // Em caso de funções que não retornam valor, temos duas opção equivalentes
 // para usar: void funcao() ou void funcao(void).
 
-// Variáveis decladas dentro do corpo/escopo ou bloco de instrução da função,
+// Variáveis declaradas dentro do corpo/escopo ou bloco de instrução da função,
 // existem somente no contexto da execução da função.
 
 // Para poder desenvolver as funções depois da função main, devemos

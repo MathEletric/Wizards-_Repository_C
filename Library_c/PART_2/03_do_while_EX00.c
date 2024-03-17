@@ -1,7 +1,7 @@
 // Diferentemente do 'while', o 'do while' executa seu bloco ao menos uma vez.
 // Assim como o while, posso omitir os colchetes para quando é uma única linha
 // de instrução. Frequentemente usado para menus, pois o menu deve ser executado
-// ao mensos uma vez.
+// ao menos uma vez.
 
 #include<stdio.h>
 #include<stdlib.h>
